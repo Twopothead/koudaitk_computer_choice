@@ -1,0 +1,13 @@
+\question （山东大学）IPv6是下一代IP。IPv6的基本报关包含（
+）个字节，此外还可以包含多个扩展报头
+\par\twoch{16}{32}{\textcolor{red}{40}}{60}
+\begin{solution}IPv6报头由基本报头和扩展报头组成，其中基本报头的长度是固定的，共40个字节。
+\end{solution}
+\question IPv6地址12AB:0000:0000:CD30:0000:0000:0000:0000/60可以表示成各种简写形式。下面的选项中，写法正确的是
+\par\fourch{\textcolor{red}{12AB:0:0:CD30:: /60}}{12AB:0:0:CD3 /60}{12AB::CD30 /60}{12AB::CD3 /60}
+\begin{solution}连续的很多0000可以进行压缩，但只能使用一次零压缩，且只能是最长的0000串进行压缩，如题目中有两组连续的0000串，但后面的串长度大于前面的串，所以压缩后面的串，即省去冒号之间的0000串；以0开头的串可以省去前面的0，如0000可以写成0，但以非0开始的串中间和末尾的0不能省，如CD30不能写成CD3。
+\end{solution}
+\question IPv6地址以十六进制数表示，每4个十六进制数为一组，组之间用冒号分隔。下面的IPv6地址ADBF:0000:FEEA:0000:0000:00EA:00AC:DEED的简化写法是
+\par\fourch{ADBF:0:FEEA:00:EA:AC:DEED}{\textcolor{red}{ADBF:0:FEEA::EA:AC:DEED}}{ADBF:0:FEEA:EA:AC:DEED}{ADBF::FEEA::EA:AC:DEED}
+\begin{solution}双冒号（::）用于化简最长的0000，但只能用一次；连续的几个0可以只写一个，如0000可以写成0；以0开始的序列前面连续的0可以省去，如B中00EA可以写成EA。
+\end{solution}

@@ -1,0 +1,18 @@
+\question （南京理工大学，2004年）设单循环链表中节点的结构为（data，next），且rear是指向非空的带头结点的单循环链表的尾节点指针。若要删除链表的第一个节点，正确的操作是（
+）
+\par\fourch{s=rear；rear=rear→next；free(s)；}{rear=rear→next；free(s)；}{rear=rear→next→next；free(s)；}{\textcolor{red}{s=rear→next→next；rear→next→next=s→next；free(s)；}}
+\begin{solution}考察链表的操作，rear→next指向头结点，头结点→next指向第一个节点
+\end{solution}
+\question （华中科技大学，2007年）某线性表用带头结点的循环单链表存储，头指针为head，当head→next→next=head成立时，线性表长度可能是（
+）
+\par\twoch{\textcolor{red}{1}}{2}{3}{4}
+\begin{solution}为了简化，我们将循环变成单链表，即head→next→next=NULL，即头结点的下一个结点的指针为空，即除了头结点只有一个结点，头结点是不计入线性表长度的，因此该线性表的长度为1。
+\end{solution}
+\question （武汉大学，2000年）非空的循环单链表head的尾结点p满足（ ）
+\par\twoch{\textcolor{red}{p→link=head}}{p→link=NULL}{p=NULL}{p=head}
+\begin{solution}先考虑p=NULL，那说明p指针指向一个空对象，肯定是不符合题意的。
+再看p=head，p指针指向了单链表表头，这说明链表头就是尾结点，这只有在只有一个结点的单链表中才会出现，因此也是不符合题意的。
+再看p→link=NULL，p结点的指针指向一个空对象，那这个就不``循环''了，还是不符合题意。
+因此只有选项A是正确的，尾结点的指针指向头结点。
+【注】本题要求非空是有原因的，若为空就不成立了，因为那时就没有所谓的尾结点了，因此这是一个必须条件。
+\end{solution}

@@ -1,0 +1,35 @@
+\question 下列储存介质中，既可随机访问又可顺序访问的是（ ）。 Ⅰ．光盘 Ⅱ．SD卡
+Ⅲ．U盘 Ⅳ．磁盘
+\par\twoch{Ⅱ、Ⅲ和Ⅳ}{Ⅰ、Ⅲ和Ⅳ}{\textcolor{red}{Ⅰ、Ⅱ、Ⅲ和Ⅳ}}{只有Ⅳ}
+\begin{solution}顺序访问：是按从前到后的顺序对数据进行读写操作。这种存取方式最为简单。有的存储设备（如磁带）只能支持顺序访问（平时用磁带听歌的时候，如果要听另外一首歌曲，一般都是快进的，也就是顺序访问过去）。
+随机访问：也称为直接访问，可以按任意的次序对数据进行读写操作。现在多数存储设备能支持随机访问（如光盘、磁盘、U盘、闪存卡等），当然这些存储设备也一定支持顺序访问。
+\end{solution}
+\question 下列关于ROM和RAM的说法中，错误的是
+Ⅰ．CD-ROM是ROM的一种，因此只能写入一次
+Ⅱ．Flash快闪存储器属于随机存取存储器，具有随机存取的功能
+Ⅲ．RAM的读出方式是破坏性读出，因此读后需要再生
+Ⅳ．SRAM读后不需要刷新，而DRAM读后需要刷新
+\par\twoch{Ⅰ和Ⅱ}{Ⅰ、Ⅲ和Ⅳ}{Ⅱ和Ⅲ}{\textcolor{red}{Ⅰ、Ⅱ和Ⅲ}}
+\begin{solution}D。
+CD-ROM属于光盘存储器，是一种机械式的存储器，和ROM有本质的区别，Ⅰ错误。
+Flash存储器是E\^{}2PROM的改进产品，虽然它也可以实现随机存取，但从原理上讲仍属于ROM，而且RAM是易失性存储器，Ⅱ错误。
+SRAM的读出方式并不是破坏性的，读出后不需再生，Ⅲ错误。
+SRAM采用双稳态触发器来记忆信息，因此不需要再生（刷新）；而DRAM采用电容存储电荷的原理来存储信息，只能维持1～2ms，因此即使电源不掉电，信息也会自动消失，因此在电荷消失之前必须要再生（刷新），Ⅳ正确。
+\end{solution}
+\question （哈尔滨工程大学，2003年）（ ）存储结构对程序员是透明的
+\par\twoch{通用寄存器}{主存}{\textcolor{red}{控制寄存器}}{堆栈}
+\begin{solution}C。
+通用寄存器、主存、堆栈都是可以被程序员编程操作的，而控制寄存器是控制器的内部结构，只关乎计算机系统的设计人员，对程序员是透明的。
+\end{solution}
+\question 下列关于PROM与掩模ROM的说法错误的是
+\par\twoch{掩模ROM制成后不可改写}{PROM制成后可编写一次，编程之后不可再改写}{\textcolor{red}{PROM制成后可多次改写}}{以上说法都不对}
+\begin{solution}C。 PROM（Programmable Read-Only
+Memory）------可编程只读存储器，也叫One-Time
+Programmable（OTP）ROM（一次可编程只读存储器），是一种可以用程序操作的只读内存。其最主要特征是只允许数据写入一次，如果数据烧入错误只能报废。
+注：可擦除的ROM的名字中都带E，如EPROM、EEPROM等，还有一个是Flash
+Memory。
+\end{solution}
+\question 下列说法中错误的是
+\par\fourch{EEPROM可电擦，即只需要在特定引脚上加上规定的电压即可擦除}{\textcolor{red}{EEPROM改写时，首先要擦除所有信息，然后重新写入}}{EEPROM写入周期需要几毫秒，远远大于SRAM、DRAM的写入周期}{以上说法都不对}
+\begin{solution}B。 EEPROM的读/写操作可按位或按字节进行，写入前不需要擦除全部内容。
+\end{solution}

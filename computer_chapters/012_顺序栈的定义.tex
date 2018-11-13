@@ -1,0 +1,24 @@
+\question （华中科技大学，2007年）若已知一个栈的入栈序列为1,2,3,4，其出栈序列为p1，p2，p3，p4，则p2，p4不可能是（
+）
+\par\twoch{2、4}{2、1}{\textcolor{red}{4、3}}{3、4}
+\begin{solution}用排除法。A的操作序列为push，pop，push，pop，push，pop，push，pop。
+B的操作序列为push，push，push，pop，pop，push，pop，pop。
+D的操作序列为push，pop，push，psuh，pop，pop，push，pop。
+只有C没有对应的操作序列，故选C。
+\end{solution}
+\question （武汉大学，2006年）设n个元素进栈序列是1，2，3，
+，n，其输出序列是p1，p2， ，pn，若p1=3，则p2的值为（ ）
+\par\twoch{一定是2}{一定是1}{\textcolor{red}{不可能是1}}{以上都不对}
+\begin{solution}p1是3，即3出栈了，此时栈中剩下1，2，此时若出栈，就是2，不可能是1。但又因为后面还有进栈元素，因此也可能是其他元素。综上分析，可能是2，不可能是1，因此本题选C。
+\end{solution}
+\question 一个栈的入栈序列为1，2，3，\ldots{}，n，其出栈序列是p1，p2，p3，\ldots{}，pn。若p2=3，则p3可能取值的个数是（
+）
+\par\twoch{n-3}{n-2}{\textcolor{red}{n-1}}{无法确定}
+\begin{solution}p1可能是1或2，那么栈中就可能是1或2，因此p3就可能取1或2。由于后面的入栈元素，可以入栈后即出栈，因此p3就可能是4或5或\ldots{}或n，因此除了3本身以外，其他的值均可以取到，因此可能取值的个数为
+。
+\end{solution}
+\question （北京航空航天大学，2004年）若某堆栈的输入序列为1,2,3\ldots{}\ldots{},n,输出序列的第一个元素为n,则第i个输出元素为（
+）
+\par\twoch{i}{n-i}{\textcolor{red}{n-i+1}}{哪个元素无所谓}
+\begin{solution}每次栈输出后，栈顶元素依次减1，所以第i个元素输出后，栈顶元素为n-i，而输出的元素为n-i+1
+\end{solution}

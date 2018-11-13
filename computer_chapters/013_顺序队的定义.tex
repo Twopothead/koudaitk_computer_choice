@@ -1,0 +1,7 @@
+\question （浙江大学，1994年）若用一个大小为6的数组来实现循环队列，且当前rear和front的值分别为0和3，当从队列中删除一个元素，再加入两个元素后，rear和front的值分别为（
+）
+\par\twoch{1和5}{\textcolor{red}{2和4}}{4和2}{5和1}
+\begin{solution}删除一个元素，执行(front+1)\%maxSize，之后front为4。
+增加一个元素，执行(rear+1)\%maxSize，之后rear为1，再增加一个元素后，rear为2。
+因此最后，rear=2，front=4。
+\end{solution}

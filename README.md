@@ -1,1 +1,3 @@
-koudaitk_computer_choice
+## Wrong title set 
+
+computer-choice.pdf

@@ -1,0 +1,46 @@
+\question （哈尔滨工业大学，2007年）对于循环队列，正确的是（ ）
+\par\twoch{无法判断队列是否为空}{无法判断队列是否为满}{队列不可能满}{\textcolor{red}{以上说法都不对}}
+\begin{solution}循环队列，教材均给出了判空和判满的条件，故A和B错，C更是错误。因此本题选D。
+\end{solution}
+\question （中山大学，1999年）循环队列存储在数组A{[}0 m{]}中，则入队时的操作为（
+）
+\par\twoch{rear=rear+1}{rear=(rear+1) mod (m-1)}{rear=(rear+1) mod m}{\textcolor{red}{rear=(rear+1) mod (m+1)}}
+\begin{solution}入队时队尾变化为rear=(rear+1)\%maxSize，但此处还是容易误选C选项，因为这里的maxSize不等于m，数组A{[}0
+m{]}是有m+1个元素的，因此本题选D。
+\end{solution}
+\question （浙江大学，1994年）若用一个大小为6的数组来实现循环队列，且当前rear和front的值分别为0和3，当从队列中删除一个元素，再加入两个元素后，rear和front的值分别为（
+）
+\par\twoch{1和5}{\textcolor{red}{2和4}}{4和2}{5和1}
+\begin{solution}删除一个元素，执行(front+1)\%maxSize，之后front为4。
+增加一个元素，执行(rear+1)\%maxSize，之后rear为1，再增加一个元素后，rear为2。
+因此最后，rear=2，front=4。
+\end{solution}
+\question 已知循环队列存储在一维数组A{[}0，\ldots{}，n-1{]}中，且队列非空时front和rear分别指向队头和队尾元素。若初始时队列为空，且要求第1个进入队列的元素存储在A{[}0{]}处，则初始时front和rear的值分别是（
+）
+\par\twoch{0，0}{\textcolor{red}{0，n-1}}{n-1，0}{n-1，n-1}
+\begin{solution}在循环队列中，进队操作是队尾指针rear循环加1，并在该处放置进队的元素，而队首指针不变。本题要求第一个进入队列的元素存储在A{[}0{]}处，队列非空时front和rear分别指向队头和队尾元素，此时front和rear均为0。则rear初值应为n-1，因为这样(rear+1)\%n=0。又front的值没有变，则front的初值应为0。
+【总结】
+在大多数教材中，循环队列的队头指针front设计为指向队列中队头元素的前一个位置，而队尾指针rear指向队尾元素的位置，该题对此进行了变化。
+\end{solution}
+\question 循环队列存放在一组数组A{[}0..M-1{]}中，end1指向队头元素，end2指向队尾元素的后一个位置。假设队列两端均可进行入队和出队操作，队列中最多能容纳M-1个元素，初始时为空。下列判断队空和队满的条件中，正确的是（
+）
+\par\fourch{\textcolor{red}{队空：end1 = = end2；
+队满：end1 = = (end2+1) mod M}}{队空：end1 = = end2；
+队满：end2 = = (end1+1) mod (M-1)}{队空：end2 = = (end1+1) mod M；
+队满：end1 = = (end2+1) mod M}{队空：end1 = = (end2+1) mod M；
+队满：end2 = = (end1+1) mod (M-1)}
+\begin{solution}根据已知，队内中最多能容纳M-1个元素，说明该循环队列采用牺牲一个存储空间来区别队空和队满的情况，即队尾元素的后一个位置，即end2指向的位置。
+首先排除B和D。循环队列的坐标空间为M，因此肯定都是对M求余。
+然后再看C选项，end2指向end1的后一个位置时，说明end1为队尾元素，即不为空，矛盾。
+\end{solution}
+\question （西南交通大学，2005年）在具有n个单元的顺序存储的循环队列中，假定front和rear分别为队头指针和队尾指针，则判断队满的条件为（
+）
+\par\twoch
+{rear\%n=front}
+{(front+1)\%n=rear}
+{rear\%n-1=front}
+{\textcolor{red}{(rear+1)\%n=front}}
+
+\begin{solution}
+队满的情况一定是：如果再插入一个元素，此时尾指针再后移一位那么一定就会与头指针相遇，也就是说rear和front之间预留一个存储空间用来判断队满
+\end{solution}

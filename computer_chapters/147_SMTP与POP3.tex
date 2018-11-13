@@ -1,0 +1,18 @@
+\question （南京师范大学）在配置一个电子邮件客户程序时，需要配置
+\par\fourch{\textcolor{red}{SMTP以便可以发送邮件，POP以便可以收发邮件}}{POP以便可以发送邮件，SMTP以便可以收发邮件}{SMTP以便可以发送邮件和收发邮件}{POP以便可以发送邮件和收发邮件}
+\begin{solution}概念题
+\end{solution}
+\question 采用base64编码后，一个99B的邮件大小为（ ）B
+\par\twoch{99}{640}{\textcolor{red}{132}}{256}
+\begin{solution}电子邮件经过MIME扩展后可以将非ASCII的内容表示成ASCII的内容，base64就是一种将非ASCII码转为ASCII码的编码方法，它将每3个字节用4个字节表示。99字节的邮件，按照每3个字节一组，可以分33组，每一组数据使用4B表示，共有4B*33=132B。
+\end{solution}
+\question （重庆大学）邮件服务器使用POP3的主要目的是
+\par\twoch{创建邮件}{管理邮件}{\textcolor{red}{收发邮件}}{删除邮件}
+\begin{solution}POP3的功能是为用户保存收到的电子邮件，并提供用户从邮件服务器上读取这些邮件。
+\end{solution}
+\question 下列关于SMTP协议的叙述中，正确的是（ ）。 Ⅰ．只支持传输7比特ASCII码内容
+Ⅱ．支持在邮件服务器之间发送邮件 Ⅲ．支持从用户代理向邮件服务器发送邮件
+Ⅳ．支持从邮件服务器向用户代理发送邮件
+\par\twoch{\textcolor{red}{仅Ⅰ、Ⅱ和Ⅲ}}{仅Ⅰ、Ⅱ和Ⅳ}{仅Ⅰ、Ⅲ和Ⅳ}{仅Ⅱ、Ⅲ和Ⅳ}
+\begin{solution}SMTP只支持传输7比特ASCII码内容，故I选项正确；用户代理到邮件服务器，邮件服务器到邮件服务器都是使用SMTP，故II和III正确；而从邮件服务器到用户代理发送邮件使用的是POP3，故IV错误。
+\end{solution}

@@ -1,0 +1,12 @@
+\question 隧道技术是IPv4向IPv6过渡的常用技术，它
+\par\fourch{通过协议转换实现IPv4与IPv6之间的通信}{需要路由支持的双协议栈}{将IPv4分组封装在IPv6分组中}{\textcolor{red}{将IPv6分组封装在IPv4分组中}}
+\begin{solution}解决IPv4向IPv6过渡问题通常有3种方法：双协议栈、隧道和协议转换，其中隧道技术将IPv6分组封装在IPv4分组中，穿过IPv4网络，在隧道出口处，再将IPv4分组解封，取出IPv6分组转发给目的结点。
+\end{solution}
+\question 下列关于IPv6的表述中，（ ）是错误的
+\par\fourch{IPv6的头部长度是不可变的}{IPv6不允许路由设备来进行分片}{IPv6采用了16B的地址号，理论上不可能用完}{\textcolor{red}{IPv6使用了头部校验和来保证传输的正确性}}
+\begin{solution}IPv6去掉了校验和域，它不会计算头部的校验和，因为计算校验和会极大地降低性能。而现在往往使用了可靠的网络层。IPv6的头部长度是固定的，因此不需要头部长度域。IPv6仅仅允许在源结点分片，而不允许由报文传递路径上的路由设备来进行分片。
+\end{solution}
+\question IPv6的首部中不再包含``协议''字段，因为
+\par\fourch{\textcolor{red}{IPv6的“下一个首部”字段说明了是什么协议}}{IPv6不需要知道净载荷数据属于何种协议}{不包含“协议”字段，减少了IP首部开销}{不包含“协议”字段，增强了高层协议处理的灵活性}
+\begin{solution}IPv6的最后一个``下一个首部''字段说明了净载荷数据属于何种协议（如TCP、UDP等），相当于IPv4的``协议''字段。
+\end{solution}
