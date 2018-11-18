@@ -3,9 +3,9 @@
 ~
 \includegraphics[width=2.42708in,height=1.07292in]{computerassets/4DDE49E225C2295AEB3F23EAC5BBDEF5.png}
 
-当这个程序执行完时，变量X和Y的值有可能为（ ~）。 Ⅰ．X=1，Y=2 Ⅱ．X=1，Y=3
-Ⅲ．X=4，Y=6
-\par\twoch{Ⅰ}{Ⅰ和Ⅱ}{\textcolor{red}{Ⅱ和Ⅲ}}{Ⅰ、Ⅱ和Ⅲ}
+当这个程序执行完时，变量X和Y的值有可能为（ ~）。 \ding{192}．X=1，Y=2 \ding{193}．X=1，Y=3
+\ding{194}．X=4，Y=6
+\par\twoch{\ding{192}}{\ding{192}和\ding{193}}{\textcolor{red}{\ding{193}和\ding{194}}}{\ding{192}、\ding{193}和\ding{194}}
 \begin{solution}由于语句并发执行，因此可能的执行顺序有①②③④（X=4，Y=2）、①③②④（X=4，Y=3）、①③④②（X=4，Y=6）、③④①②（X=1，Y=3），③①②④（X=4，Y=3）、③①④②（X=4，Y=6）这6种情况。所以应该选C。这类题主要考查对于并发执行的理解，列出所有可能情况时，注意Begin和End中的语句还是按顺序执行的。
 \end{solution}
 \question （南京航空航天大学，2006年）要实现两个进程互斥，设一个互斥信号量mutex，当mutex为0时，表示

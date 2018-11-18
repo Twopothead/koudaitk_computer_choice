@@ -2,9 +2,9 @@
 \par\fourch{ASCII码字符保持不变，非ASCII码字符用=XX表示，其中XX是该字符的十六进制值}{\textcolor{red}{不管是否是ASCII码字符，每3个字符用另4个ASCII字符表示}}{以64为基数，将所有非ASCII码字符用该字符的十六进制值加64后的字符表示}{将每4个非ASCII码字符用6个ASCII码字符表示}
 \begin{solution}选项A是quoted-printable编码方式，所以排除；base64编码方式不管是否是ASCII码字符，每3个字符用另外4个ASCII码字符表示。
 \end{solution}
-\question 下列关于SMTP协议的叙述中，正确的是（ ）。 Ⅰ．只支持传输7比特ASCII码内容
-Ⅱ．支持在邮件服务器之间发送邮件 Ⅲ．支持从用户代理向邮件服务器发送邮件
-Ⅳ．支持从邮件服务器向用户代理发送邮件
-\par\twoch{\textcolor{red}{仅Ⅰ、Ⅱ和Ⅲ}}{仅Ⅰ、Ⅱ和Ⅳ}{仅Ⅰ、Ⅲ和Ⅳ}{仅Ⅱ、Ⅲ和Ⅳ}
+\question 下列关于SMTP协议的叙述中，正确的是（ ）。 \ding{192}．只支持传输7比特ASCII码内容
+\ding{193}．支持在邮件服务器之间发送邮件 \ding{194}．支持从用户代理向邮件服务器发送邮件
+\ding{195}．支持从邮件服务器向用户代理发送邮件
+\par\twoch{\textcolor{red}{仅\ding{192}、\ding{193}和\ding{194}}}{仅\ding{192}、\ding{193}和\ding{195}}{仅\ding{192}、\ding{194}和\ding{195}}{仅\ding{193}、\ding{194}和\ding{195}}
 \begin{solution}SMTP只支持传输7比特ASCII码内容，故I选项正确；用户代理到邮件服务器，邮件服务器到邮件服务器都是使用SMTP，故II和III正确；而从邮件服务器到用户代理发送邮件使用的是POP3，故IV错误。
 \end{solution}

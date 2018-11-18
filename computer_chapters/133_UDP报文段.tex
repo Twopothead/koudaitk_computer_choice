@@ -8,19 +8,19 @@
 \begin{solution}以太网的帧的最大数据负载是1500B，IP首部长度为20B。所以每个分片的数据字段长度为1480B，所以需要6个分片来传输该数据报。
 \end{solution}
 \question 下列说法正确的是（ ）。
-Ⅰ．传输层是OSI模型的第四层，是整个网络协议体系的核心
-Ⅱ．传输层传输数据只能在源主机和目的主机之间进行点到点的传输
-Ⅲ．TCP和UDP是典型的传输层协议，TCP是面向连接的，而UDP是面向无连接的
-Ⅳ．TCP连接进行流量控制和拥塞控制，而UDP既不进行流量控制，又不进行拥塞控制
-\par\twoch{Ⅰ、Ⅱ、Ⅲ}{Ⅰ、Ⅱ、Ⅳ}{\textcolor{red}{Ⅰ、Ⅲ、Ⅳ}}{Ⅱ、Ⅲ、Ⅳ}
-\begin{solution}传输层实现的是端到端的传输，即实现进程之间的通信，故Ⅱ错误，Ⅰ、Ⅲ、Ⅳ正确。
+\ding{192}．传输层是OSI模型的第四层，是整个网络协议体系的核心
+\ding{193}．传输层传输数据只能在源主机和目的主机之间进行点到点的传输
+\ding{194}．TCP和UDP是典型的传输层协议，TCP是面向连接的，而UDP是面向无连接的
+\ding{195}．TCP连接进行流量控制和拥塞控制，而UDP既不进行流量控制，又不进行拥塞控制
+\par\twoch{\ding{192}、\ding{193}、\ding{194}}{\ding{192}、\ding{193}、\ding{195}}{\textcolor{red}{\ding{192}、\ding{194}、\ding{195}}}{\ding{193}、\ding{194}、\ding{195}}
+\begin{solution}传输层实现的是端到端的传输，即实现进程之间的通信，故\ding{193}错误，\ding{192}、\ding{194}、\ding{195}正确。
 \end{solution}
-\question 下列关于TCP和UDP的描述正确的是（ ）。 Ⅰ．TCP和UDP都是无连接的
-Ⅱ．TCP是无连接的，UDP是面向连接的
-Ⅲ．TCP适用于可靠性较差的网络，UDP适用于可靠性较高的网络
-Ⅳ．TCP适用于可靠性较高的网络，UDP适用于可靠性较差的网络
-\par\twoch{Ⅱ、Ⅳ}{Ⅱ、Ⅲ}{Ⅳ}{\textcolor{red}{Ⅲ}}
-\begin{solution}TCP是面向连接的，UDP是无连接的，故Ⅰ、Ⅱ错误。由于TCP是可靠的传输，即使网络本身性能比较差，TCP也能保证较好的性能，故适用于可靠性比较差的网络；而UDP是不可靠的传输，如果网络本身还不可靠，就会造成错误太多，故UDP适用于可靠性较高的网络，Ⅲ正确，Ⅳ错误。
+\question 下列关于TCP和UDP的描述正确的是（ ）。 \ding{192}．TCP和UDP都是无连接的
+\ding{193}．TCP是无连接的，UDP是面向连接的
+\ding{194}．TCP适用于可靠性较差的网络，UDP适用于可靠性较高的网络
+\ding{195}．TCP适用于可靠性较高的网络，UDP适用于可靠性较差的网络
+\par\twoch{\ding{193}、\ding{195}}{\ding{193}、\ding{194}}{\ding{195}}{\textcolor{red}{\ding{194}}}
+\begin{solution}TCP是面向连接的，UDP是无连接的，故\ding{192}、\ding{193}错误。由于TCP是可靠的传输，即使网络本身性能比较差，TCP也能保证较好的性能，故适用于可靠性比较差的网络；而UDP是不可靠的传输，如果网络本身还不可靠，就会造成错误太多，故UDP适用于可靠性较高的网络，\ding{194}正确，\ding{195}错误。
 \end{solution}
 \question 下列关于TCP和UDP的描述，正确的是
 \par\twoch{TCP和UDP都是无连接的}{TCP是无连接的，UDP是面向连接的}{\textcolor{red}{TCP适用于可靠性较差的网络，UDP适用于可靠性较高的网络}}{TCP适用于可靠性较高的网络，UDP适用于可靠性较差的网络}

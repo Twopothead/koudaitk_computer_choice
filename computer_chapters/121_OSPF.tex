@@ -8,17 +8,17 @@
 \begin{solution}OSPF规定路由器失效时间是Hello分组间隔时间的4倍，所以选B。
 \end{solution}
 \question 关于OSPF，下列说法正确的是（ ）。
-Ⅰ．OSPF的每个区域（area）运行路由选择算法的一个实例
-Ⅱ．OSPF路由器向各个活动端口组播Hello分组来发现邻居路由器
-Ⅲ．Hello协议还用来选择指定路由器，每个区域选出一个指定路由器
-Ⅳ．OSPF默认的路由更新周期为30s
-\par\twoch{\textcolor{red}{Ⅰ、Ⅱ、Ⅲ}}{Ⅰ、Ⅱ、Ⅳ}{Ⅰ、Ⅲ、Ⅳ}{Ⅱ、Ⅲ、Ⅳ}
-\begin{solution}OSPF使用Hello数据报发现邻居并建立邻接，所以Ⅱ正确。Hello数据报以组播形式每隔一定时间（HelloInterval）发送一次。在不同网络中，HelloInterval的时间也不同，所以Ⅳ错误，事实上RIP默认的路由更新周期为30s。
+\ding{192}．OSPF的每个区域（area）运行路由选择算法的一个实例
+\ding{193}．OSPF路由器向各个活动端口组播Hello分组来发现邻居路由器
+\ding{194}．Hello协议还用来选择指定路由器，每个区域选出一个指定路由器
+\ding{195}．OSPF默认的路由更新周期为30s
+\par\twoch{\textcolor{red}{\ding{192}、\ding{193}、\ding{194}}}{\ding{192}、\ding{193}、\ding{195}}{\ding{192}、\ding{194}、\ding{195}}{\ding{193}、\ding{194}、\ding{195}}
+\begin{solution}OSPF使用Hello数据报发现邻居并建立邻接，所以\ding{193}正确。Hello数据报以组播形式每隔一定时间（HelloInterval）发送一次。在不同网络中，HelloInterval的时间也不同，所以\ding{195}错误，事实上RIP默认的路由更新周期为30s。
 \end{solution}
-\question 关于OSPF，下面的描述中正确的是（ ）。 Ⅰ．OSPF是一种链路状态协议
-Ⅱ．OSPF使用链路状态通告扩散路由信息 Ⅲ．OSPF网络中用区域1来表示主干网段
-Ⅳ．OSPF路由器中可以配置多个路由进程
-\par\twoch{Ⅰ、Ⅱ、Ⅲ}{\textcolor{red}{Ⅰ、Ⅱ、Ⅳ}}{Ⅰ、Ⅲ、Ⅳ}{Ⅱ、Ⅲ、Ⅳ}
+\question 关于OSPF，下面的描述中正确的是（ ）。 \ding{192}．OSPF是一种链路状态协议
+\ding{193}．OSPF使用链路状态通告扩散路由信息 \ding{194}．OSPF网络中用区域1来表示主干网段
+\ding{195}．OSPF路由器中可以配置多个路由进程
+\par\twoch{\ding{192}、\ding{193}、\ding{194}}{\textcolor{red}{\ding{192}、\ding{193}、\ding{195}}}{\ding{192}、\ding{194}、\ding{195}}{\ding{193}、\ding{194}、\ding{195}}
 \begin{solution}OSPF是一个性能优越的、开放的、适合大型网络规模的路由协议。链路状态通告（Link
 State
 Advertisements，LSA）是一种OSPF数据报，包含可在OSPF路由器间共享的链路状态和路由信息。OSPF使用LSA来扩散路由信息。

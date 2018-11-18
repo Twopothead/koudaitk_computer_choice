@@ -1,6 +1,6 @@
 \question 当IP分组经过路由转发时，如果不被分片，则以下（ ~）字段将不会改变。
-Ⅰ．TTL ~ ~ ~ ~ ~ ~ ~ ~ Ⅱ．校验和 Ⅲ．DF ~ ~ ~ ~ ~ ~ ~ ~ Ⅳ．MF
-\par\twoch{仅Ⅰ、Ⅱ、Ⅲ}{仅Ⅱ、Ⅲ、Ⅳ}{仅Ⅰ、Ⅲ、Ⅳ}{\textcolor{red}{仅Ⅲ、Ⅳ}}
+\ding{192}．TTL ~ ~ ~ ~ ~ ~ ~ ~ \ding{193}．校验和 \ding{194}．DF ~ ~ ~ ~ ~ ~ ~ ~ \ding{195}．MF
+\par\twoch{仅\ding{192}、\ding{193}、\ding{194}}{仅\ding{193}、\ding{194}、\ding{195}}{仅\ding{192}、\ding{194}、\ding{195}}{\textcolor{red}{仅\ding{194}、\ding{195}}}
 \begin{solution}DF字段肯定不会改变；当IP分组不被分片时，MF字段也不会改变；而生存周期（TTL）字段每经过一个路由器都会改变，由于TTL字段值发生改变，导致首部校验和的值发生改变。
 \end{solution}
 \question 如果IPv4的分组太大，则会在传输中被分片，那么在（

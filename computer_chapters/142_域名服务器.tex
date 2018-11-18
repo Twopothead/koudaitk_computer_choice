@@ -13,19 +13,19 @@
 \begin{solution}在TCP、UDP以及IP的首部都有校验和字段，用于提供差错控制功能，但在DNS的格式中没有校验和字段，因此DNS无法提供差错控制功能。还是要提醒一点：IP数据报只检查首部，而TCP和UDP既检查首部也检查数据部分。
 \end{solution}
 \question 下面有关DNS的说法中正确的是（ ）。
-Ⅰ．主域名服务器运行域名服务器软件，有域名数据库
-Ⅱ．辅助域名服务器运行域名服务器软件，但是没有域名数据库
-Ⅲ．一个域名有且只有一个主域名服务器
-\par\twoch{\textcolor{red}{Ⅰ、Ⅲ}}{Ⅰ、Ⅱ、Ⅲ}{Ⅰ}{Ⅱ、Ⅲ}
-\begin{solution}辅助域名服务器也是有数据库的，故Ⅱ错误；Ⅰ、Ⅲ均正确。
+\ding{192}．主域名服务器运行域名服务器软件，有域名数据库
+\ding{193}．辅助域名服务器运行域名服务器软件，但是没有域名数据库
+\ding{194}．一个域名有且只有一个主域名服务器
+\par\twoch{\textcolor{red}{\ding{192}、\ding{194}}}{\ding{192}、\ding{193}、\ding{194}}{\ding{192}}{\ding{193}、\ding{194}}
+\begin{solution}辅助域名服务器也是有数据库的，故\ding{193}错误；\ding{192}、\ding{194}均正确。
 \end{solution}
 \question （ ）一定可以将其管辖的主机名转换为该主机的IP地址
 \par\twoch{本地域名服务器}{根域名服务器}{\textcolor{red}{授权域名服务器}}{代理域名服务器}
 \begin{solution}每一个主机都必须在授权域名服务器处注册登记，授权域名服务器一定能够将其管辖的主机名转换为该主机的IP地址。
 \end{solution}
 \question 下列关于主机的IP地址与域名关系的描述中，正确的是（ ）。
-Ⅰ．IP地址是域名中部分信息的表示 Ⅱ．域名是IP地址中部分信息的表示
-Ⅲ．IP地址和域名是等价的 Ⅳ．IP地址和域名分别表达不同的含义
-\par\twoch{Ⅱ，Ⅲ}{Ⅰ，Ⅳ}{Ⅱ，Ⅳ}{\textcolor{red}{Ⅲ}}
+\ding{192}．IP地址是域名中部分信息的表示 \ding{193}．域名是IP地址中部分信息的表示
+\ding{194}．IP地址和域名是等价的 \ding{195}．IP地址和域名分别表达不同的含义
+\par\twoch{\ding{193}，\ding{194}}{\ding{192}，\ding{195}}{\ding{193}，\ding{195}}{\textcolor{red}{\ding{194}}}
 \begin{solution}IP是主机在Internet中唯一识别的标志，但由于IP是无规则的数字，不适合人们的记忆，而域名容易理解、记忆，他们本质上是等价的，故人们常常通过站点的域名来访问站点。
 \end{solution}
